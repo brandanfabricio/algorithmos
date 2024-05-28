@@ -3,7 +3,7 @@
 Bubble Sort es un algoritmo de ordenación sencillo que recorre repetidamente una lista, compara elementos adyacentes y los intercambia si están en el orden incorrecto. Este proceso se repite hasta que la lista esté ordenada. El algoritmo recibe su nombre porque los elementos más grandes "burbujearán" hacia la parte superior de la lista, mientras que los elementos más pequeños se moverán hacia la parte inferior.
 
 ## Funcionamiento de Bubble Sort
-
+0
 1. **Iteración inicial**: El algoritmo comienza recorriendo la lista desde el primer hasta el último elemento.
 2. **Comparación y intercambio**: En cada paso, compara el elemento actual con el siguiente. Si el elemento actual es mayor que el siguiente, se intercambian.
 3. **Repetición**: Este proceso de comparación e intercambio se repite para cada elemento de la lista.
@@ -13,16 +13,14 @@ Bubble Sort es un algoritmo de ordenación sencillo que recorre repetidamente un
 ## Pseudocódigo de Bubble Sort
 
 ```plaintext
-procedimiento bubbleSort(lista)
-    n = longitud(lista)
-    repetir
-        intercambiado = falso
-        para i = 1 hasta n-1 inclusive hacer
-            si lista[i-1] > lista[i] entonces
-                intercambiar(lista[i-1], lista[i])
-                intercambiado = verdadero
+procedimiento deLaBurbuja(a0,a1,a2,a3,...,a(a-1))
+    para i <- 1 hasta n-1 hacer
+        para j <- 0 hasta n-1 hacer 
+            si a(j)>a(j+1) entinces 
+                aux <- a(j)   
+                a(j)<- a(j+1)
+                a(j+1)<- aux
             fin si
-        fin para
-        n = n - 1
-    hasta que no intercambiado
+        fin para 
+    fin para 
 fin procedimiento
