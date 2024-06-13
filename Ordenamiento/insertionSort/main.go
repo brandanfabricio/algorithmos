@@ -2,10 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
-	arr := []int{304, 37, 12, 45, 6, 2, 11, 332, 1, 3, 5, 7, 42, 31, 88}
-	fmt.Println(arr)
-	fmt.Println(len(arr))
+func insertionSort(arr []int) {
 	for i := 1; i < len(arr); i++ {
 		clave := arr[i]
 		j := i - 1
@@ -15,5 +12,11 @@ func main() {
 		}
 		arr[j+1] = clave
 	}
+
+}
+func main() {
+	arr := []int{304, 37, 12, 45, 6, 2, 11, 332, 1,0,3, 5, 7, 42, 31, 88}
+	fmt.Println(arr)
+	insertionSort(arr)
 	fmt.Println(arr)
 }

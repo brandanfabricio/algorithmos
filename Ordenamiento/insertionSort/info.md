@@ -1,6 +1,6 @@
-# insertion sort Algorithm
+# Insertion sort Algorithm
 
-El algoritmo de ordenamiento por inserción es un algoritmo de fácil aplicación que permite el ordenamiento de una lista.
+El **algoritmo** de *ordenamiento* por ~~inserción~~ es un algoritmo de fácil aplicación que permite el ordenamiento de una lista.
 Su funcionamiento consiste en el recorrido por la lista seleccionando en cada iteración un valor como clave y compararlo con el resto insertándolo en el lugar correspondiente.
 
 ## Pseudocódigo de Insertion Sort
